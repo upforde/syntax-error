@@ -1,10 +1,30 @@
+/*React imports*/
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+/*Object imports*/
+import Grid from './Grid'
+import Header from './Header'
+import FlipButton from './FlipButton'
+
+/*CSS imports */
+import './index.css';
+
+ReactDOM.render(
+    <div>
+    <Header header='./icons/header.jpg'/>
+    <Grid>
+        <FlipButton logo='./icons/logo.svg'/>
+        <FlipButton logo='./icons/logo.svg'/>
+        <FlipButton logo='./icons/logo.svg'/>
+        <FlipButton logo='./icons/logo.svg'/>
+        <FlipButton logo='./icons/logo.svg'/>
+        <FlipButton logo='./icons/logo.svg'/>
+        <FlipButton logo='./icons/logo.svg'/>
+        <FlipButton logo='./icons/logo.svg'/>
+    </Grid></div>,
+    document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
