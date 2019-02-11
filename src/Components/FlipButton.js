@@ -9,11 +9,18 @@ class FlipButton extends Component {
       isFlipped: false
     };
     this.handleClick = this.handleClick.bind(this);
+    this.flipAndCalculate = this.flipAndCalculate.bind(this);
   }
- 
+
   handleClick(e) {
     e.preventDefault();
     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+  }
+  
+  flipAndCalculate(e) {
+    e.preventDefault();
+    this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+    console.log("Calculating...");
   }
  
   render() {
@@ -21,7 +28,7 @@ class FlipButton extends Component {
       <nav className="button">
         <ReactCardFlip isFlipped={this.state.isFlipped}>
           <div key="front">
-            <img src={this.props.imgURL} onClick={this.handleClick} className="Button-logo" alt="logo" />
+            <img src={this.props.imgURL} onClick={this.flipAndCalculate} className="Button-logo" alt="logo" />
           </div>
           <div key="back">
             <div className="areYouSureAboutThat">
