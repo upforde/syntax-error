@@ -6,17 +6,21 @@ import FlipButton from './Components/FlipButton';
 import imgURLS from './imgURLS';
 import './index.css';
 
-function App(){
-    const buttons = Array.from(imgURLS).map(imgData => <FlipButton key={imgData.key} imgURL={imgData.imgURL} />);
+class App extends React.Component {
+    assignButtons(){
+        return Array.from(imgURLS).map(imgData => <FlipButton key={imgData.key} imgURL={imgData.imgURL} />);
+    }
 
-    return(
-        <main>
-            <Header header='./icons/syntax_error_logo_only.png'/>
-            <Grid>
-                {buttons}
-            </Grid>
-        </main>
-    )
+    render(){
+        return(
+            <main>
+                <Header header='./icons/syntax_error_logo_only.png'/>
+                <Grid>
+                    {this.assignButtons()}
+                </Grid>
+            </main>
+        )
+    }
 }
 
 
