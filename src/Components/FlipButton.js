@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactCardFlip from 'react-card-flip';
-import './index.css';
+import Button from 'react-bootstrap/Button';
 
 class FlipButton extends Component {
   constructor() {
@@ -18,16 +18,19 @@ class FlipButton extends Component {
  
   render() {
     return (
-      <div className="button">
+      <nav className="button">
         <ReactCardFlip isFlipped={this.state.isFlipped}>
           <div key="front">
-            <img src={this.props.logo} onClick={this.handleClick} className="Button-logo" alt="logo" />
+            <img src={this.props.imgURL} onClick={this.handleClick} className="Button-logo" alt="logo" />
           </div>
           <div key="back">
-            <img src={this.props.logo} onClick={this.handleClick} className="Button-logo" alt="logo"/>
+            <div className="areYouSureAboutThat">
+              <Button variant="success" className="areYouSureAboutThatObject">Yes</Button>
+              <Button variant="danger" className="areYouSureAboutThatObject" onClick={this.handleClick}>No</Button>
+            </div>
           </div>
         </ReactCardFlip>
-      </div>
+      </nav>
     )
   }
 }

@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  background-color: #111111;
 }
 
 code {
@@ -39,15 +39,33 @@ code {
 
 .button{
   flex: 1 0 20%;
-  margin: 5px;
+  margin: 15px;
   text-align: center;
 }
 
 #header{
-  width: 100%;
-  margin: 0px auto;
-  margin: 5px;
-  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 40vmin;
+  width: 40vmin;
+}
+
+.areYouSureAboutThat{
+  padding: 4vmin;
+  margin: 0 auto;
+  height: 20vmin;
+  width: 20vmin;
+  border-radius: 25px;
+  border: 2px solid 	#C39CDF;
+}
+
+.areYouSureAboutThatObject{
+  display: block;
+  height: 40%;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
