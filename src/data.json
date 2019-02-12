@@ -1,0 +1,99 @@
+[
+    {
+        "key": "quiz",
+        "data":{
+            "link": "",
+            "1":{"question": "Hva heter Dama Mario redder i Donkey kong? (NES)", "answer": "Pauline"},
+            "2":{"question": "Hva er det egentlige navnet til Queen of Blades? (Starcraft serien)", "answer": "Sarah Kerrigan"}
+        }
+    },
+
+    {
+        "key": "screenshot",
+        "data":{
+            "link": "",
+            "directory": "../Screenshots/",
+            "pictures":{
+                "1": "name.jpg",
+                "2": "name.jpg"
+            }
+        }
+    }, 
+
+    {
+        "key": "audience",
+        "data":{
+            "link": "",
+            "games":{
+                "1": "gamename",
+                "2": "gamename"
+            }
+        }
+    },
+
+    
+    {
+        "key": "multiple",
+        "data":{
+            "link": "",
+            "1":{
+                "question": "",
+                "answer": "",
+                "dummy1": "",
+                "dummy2": "",
+                "dummy3": ""
+            },
+            "2":{
+                "question": "",
+                "answer": "",
+                "dummy1": "",
+                "dummy2": "",
+                "dummy3": ""
+            }
+        }
+    },
+
+    {
+        "key": "music",
+        "data":{
+            "link": "",
+            "directory": "../Songs/",
+            "songs":{
+                "1": "one",
+                "2": "two"
+            }
+        }
+    },
+
+    {
+        "key": "crew",
+        "data":{
+            "link": "",
+            "games":{
+                "1": "gamename",
+                "2": "gamename"
+            }
+        }
+    },
+
+    {
+        "key": "silhouette",
+        "data":{
+            "link": "",
+            "directory": "../Silhouette/",
+            "1": {"black": "blackSilhouette.jpg", "color": "colorSilhouette.jpg"},
+            "2": {"black": "blackSilhouette.jpg", "color": "colorSilhouette.jpg"}
+        }
+    },
+
+    {
+        "key": "sologame",
+        "data":{
+            "link": "",
+            "games":{
+                "1": "gamename",
+                "2": "gamename"
+            }
+        }
+    }
+]
