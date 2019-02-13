@@ -57,15 +57,16 @@ code {
   width: 20vmin;
   border-radius: 25px;
   border: 2px solid 	#C39CDF;
+  display: flex;
+  flex-direction: column;
 }
 
-.areYouSureAboutThatObject{
+.buttonComponent{
   display: block;
-  height: 40%;
-  width: 70%;
+  height: 10vmin;
+  width: 10vmin; 
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  text-decoration: 'none';
 }
 
 

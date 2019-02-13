@@ -2,32 +2,28 @@
     {
         "key": "quiz",
         "data":{
-            "link": "",
-            "1":{"question": "Hva heter Dama Mario redder i Donkey kong? (NES)", "answer": "Pauline"},
-            "2":{"question": "Hva er det egentlige navnet til Queen of Blades? (Starcraft serien)", "answer": "Sarah Kerrigan"}
+            "1":{ "id":"1", "question": "Hva heter Dama Mario redder i Donkey kong? (NES)", "answer": "Pauline" },
+            "2":{ "id":"2", "question": "Hva er det egentlige navnet til Queen of Blades? (Starcraft serien)", "answer": "Sarah Kerrigan" }
         }
     },
 
     {
         "key": "screenshot",
         "data":{
-            "link": "",
-            "directory": "../Screenshots/",
-            "pictures":{
-                "1": "name.jpg",
-                "2": "name.jpg"
-            }
+            "1": { "id": "1", "name": "name.jpg" },
+            "2": { "id": "2", "name": "name.jpg" },
+            "3": { "id": "3", "name": "name.jpg" },
+            "4": { "id": "4", "name": "name.jpg" },
+            "5": { "id": "5", "name": "name.jpg" },
+            "6": { "id": "6", "name": "name.jpg" }
         }
     }, 
 
     {
         "key": "audience",
         "data":{
-            "link": "",
-            "games":{
-                "1": "gamename",
-                "2": "gamename"
-            }
+            "1": { "id":"1", "gamename":"gamename" },
+            "2": { "id":"2", "gamename":"gamename" }
         }
     },
 
@@ -35,8 +31,8 @@
     {
         "key": "multiple",
         "data":{
-            "link": "",
             "1":{
+                "id":"1",
                 "question": "",
                 "answer": "",
                 "dummy1": "",
@@ -44,6 +40,7 @@
                 "dummy3": ""
             },
             "2":{
+                "id":"2",
                 "question": "",
                 "answer": "",
                 "dummy1": "",
@@ -56,44 +53,32 @@
     {
         "key": "music",
         "data":{
-            "link": "",
-            "directory": "../Songs/",
-            "songs":{
-                "1": "one",
-                "2": "two"
-            }
+            "1": { "id":"1", "name":"one" },
+            "2": { "id":"2", "name":"two" }
         }
     },
 
     {
         "key": "crew",
         "data":{
-            "link": "",
-            "games":{
-                "1": "gamename",
-                "2": "gamename"
-            }
+            "1": { "id":"1", "gamename":"gamename" },
+            "2": { "id":"2", "gamename":"gamename" }
         }
     },
 
     {
         "key": "silhouette",
         "data":{
-            "link": "",
-            "directory": "../Silhouette/",
-            "1": {"black": "blackSilhouette.jpg", "color": "colorSilhouette.jpg"},
-            "2": {"black": "blackSilhouette.jpg", "color": "colorSilhouette.jpg"}
+            "1": { "id":"1", "black": "blackSilhouette.jpg", "color": "colorSilhouette.jpg"},
+            "2": { "id":"2", "black": "blackSilhouette.jpg", "color": "colorSilhouette.jpg"}
         }
     },
 
     {
         "key": "sologame",
         "data":{
-            "link": "",
-            "games":{
-                "1": "gamename",
-                "2": "gamename"
-            }
+            "1": { "id":"1", "gamename":"gamename" },
+            "2": { "id":"2", "gamename":"gamename" }
         }
     }
 ]
