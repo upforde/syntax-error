@@ -12,10 +12,6 @@ class Screenshot extends Component{
       current: {}
     }
   }
-
-  handleClick = () => {
-    console.log(this.props.screenshot)
-  }
   
   componentDidMount = () => {
     const random = (Math.floor(Math.random() * _.size(Data[1].data)) + 1)
