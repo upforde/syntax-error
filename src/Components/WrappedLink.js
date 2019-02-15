@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 function WrappedLink(props) {
     return (
         <Link className={props.className} to={props.to}>
-            <Button variant={props.variant}>{props.text}</Button>    
+            <Button variant={props.variant} >{props.text}</Button>    
         </Link>
     )
 }

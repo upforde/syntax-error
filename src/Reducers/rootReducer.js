@@ -10,15 +10,25 @@ const initState = {
 }
 
 const rootReducer = (state = initState, action) => {
-    console.log(action)
     if(action.type === "ADD_USED"){
         switch(action.to){
             case 'audience':
-                break;
+                return{
+                    ...state,
+                    audience: action.id,
+                    crew: action.id
+                }
             case 'crew':
-                break;
+                return{
+                    ...state,
+                    crew: action.id,
+                    audience: action.id
+                }
             case 'sologame':
-                break;
+                return{
+                    ...state,
+                    sologame: action.id
+                }
             case 'multiple':
                 return{
                     ...state,
@@ -45,7 +55,7 @@ const rootReducer = (state = initState, action) => {
                     silhouette: [...state.silhouette, action.id]
                 }
             default:
-                break;
+                break
         }
     }
     else if(action.type === "REMOVE_USED"){
@@ -97,10 +107,10 @@ const rootReducer = (state = initState, action) => {
                     silhouette: newSilhouette
                 }
             default:
-                break;
+                break
         }
     }
-    return state;
+    return state
 }
 
-export default rootReducer;
+export default rootReducer

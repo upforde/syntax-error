@@ -1,19 +1,49 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import WrappedLink from '../WrappedLink';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import Data from '../../data.json'
+import _ from 'underscore'
+import WrappedLink from '../WrappedLink'
 
-function Sologame(props){
-  console.log(props.sologame)
+class Sologame extends Component{
+  constructor(){
+    super()
+    this.state = {
+      current: {}
+    }
+  }
+
+  componentDidMount = () => {
+    const random = (Math.floor(Math.random() * _.size(Data[7].data)) + 1);
+    if(!_.contains(this.props.sologame, Data[7].data[random])){
+      this.props.addUsed(Data[7].data[random])
+      this.setState({
+        current: Data[7].data[random]
+      })
+    }
+  }
+
+  render(){
     return(
         <div>
-            <p>{props.sologame.gamename}</p>
-            <WrappedLink to='/' text="Go Home" />
+          <h1>Your challenge is</h1>
+          <p>Game: {this.state.current.gamename}</p>
+          <p>{(this.state.current.objective !== "")? "Objective: " + this.state.current.objective: null}</p>
+          <WrappedLink to='/' text="Go Home" />
         </div>
     )
+  }
 }
+
 const mapStateToProps = (state) => {
     return{
       sologame: state.sologame
     }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addUsed: (id) => dispatch({ type: "ADD_USED", id: id, to: "sologame" })
   }
-export default connect(mapStateToProps)(Sologame);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Sologame)
