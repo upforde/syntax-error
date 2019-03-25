@@ -34,12 +34,13 @@ class Silhouette extends Component{
   render(){
     return(
         <div>
-          <h1>{(this.state.answer)?this.state.current.name:"???"}</h1>
-          <img id="image" src={ (this.state.answer)?this.state.directory + this.state.current.color: this.state.directory + this.state.current.black } alt=""></img>
+          <h1 className="challenge_title">{(this.state.answer)?this.state.current.name:"Hvem er dette?"}</h1>
+          <img classname="silhouette_challenge" id="image" src={ (this.state.answer)?this.state.directory + this.state.current.color: this.state.directory + this.state.current.black } alt=""></img>
           <br />
-          <Button variant="light" onClick={ this.handleClick }>Answer</Button>
-          <br />
-          <WrappedLink to='/' text="Go Home" />
+          <div className="button_wrapper">
+            <Button onClick={ this.handleClick }>Answer</Button>
+            <WrappedLink to='/' text="Go Home" />
+          </div>
         </div>
     )
   }

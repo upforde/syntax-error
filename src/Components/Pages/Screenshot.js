@@ -9,6 +9,7 @@ class Screenshot extends Component{
     super()
     this.state = {
       directory: './Screenshots/',
+      name: "",
       current: {}
     }
   }

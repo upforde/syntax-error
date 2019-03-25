@@ -52,11 +52,14 @@ class Multiple extends Component{
   render(){
     return(
       <div>
-        <h1>{this.state.current.question}</h1>
+        <img className="challenge_img" src="./icons/multiplechoice_challenge.jpg" alt="" ></img>
+        <h1 className="challenge_title">{this.state.current.question}</h1>
         <Foursome>
           {this.assignAnswers()}
         </Foursome>
-        <WrappedLink to='/' text="Go Home" />
+        <div className="button_wrapper">
+          <WrappedLink to='/' text="Go Home" />
+        </div>
       </div>
     )
   }

@@ -37,10 +37,13 @@ class Music extends Component{
     console.log(this.state.current.name)
     return(
         <div>
-            <h1>{(this.state.answer)?this.state.current.name:"???"}</h1>
+            <img className="challenge_img" src="./icons/music_challenge.jpg" alt="" ></img>
+            <h1 className="challenge_title">{(this.state.answer)?this.state.current.name:"???"}</h1>
             <AudioPlayer source={this.state.directory + this.state.current.name}/><br />
-            <Button onClick={this.handleClick}>Answer</Button>
-            <WrappedLink to='/' text="Go Home" />
+            <div className="button_wrapper">
+              <Button onClick={this.handleClick}>Answer</Button>
+              <WrappedLink to='/' text="Go Home" />
+            </div>
         </div>
     )
   }

@@ -33,10 +33,13 @@ class Quiz extends Component{
   render(){
     return(
       <div>
-          <p>{this.state.current.question}</p>
-          <p>{(this.state.answer)?this.state.current.answer:null}</p>
-          <Button onClick={this.handleClick}>Reveal answer</Button>
-          <WrappedLink to='/' text="Go Home" />
+          <img className="challenge_img" src="./icons/quiz_challenge.jpg" alt="" ></img>
+          <h1 className="challenge_title">{this.state.current.question}</h1>
+          <p className="reveal_answer">{(this.state.answer)?this.state.current.answer:null}</p>
+          <div className="button_wrapper">
+            <Button className="challenge_button answer_button" onClick={this.handleClick}>Reveal answer</Button>
+            <WrappedLink className="challenge_button go_home" to='/' text="Go Home" />
+          </div>
       </div>
     )
   }

@@ -25,10 +25,12 @@ class Crew extends Component{
   render(){
     return(
       <div>
-          <h1>Your challenge is</h1>
-          <p>Game: {this.state.current.gamename}</p>
-          <p>{(this.state.current.objective !== "")? "Objective: " + this.state.current.objective: null}</p>
-          <WrappedLink to='/' text="Go Home" />
+          <img className="challenge_img" src="./icons/crew_challenge.jpg" alt="" ></img>
+          <p className="challenge_title">GAME: {this.state.current.gamename}</p>
+          <p className="challenge_objective">{(this.state.current.objective !== "")? "OBJECTIVE: " + this.state.current.objective: null}</p>
+          <div className="button_wrapper">
+            <WrappedLink to='/' text="Go Home" />
+          </div>
       </div>
     )
   }
